@@ -17,7 +17,7 @@ let res1 = encuentraMayor(arregloNum1);
 console.log(`El numero Mayor es: ${res1}`);
 
 ////////////////////////  Función ejercicio #2  ////////////////
-let numeroMenor = 0;
+let numeroMenor = Number.MAX_VALUE;
 let arregloNum2 = [-1, 3, 4, 2, 6];
 
 function encuentraMenor (arreglo){
