@@ -28,10 +28,34 @@
         <div class="col-auto">
             <button type="button" class="btn btn-primary mb-3" id="btnCalculaMayor">Calcular mayor</button>
             <button type="button" class="btn btn-primary mb-3" id="btnCalculaMenor">Calcular menor</button>
+            <button type="button" class="btn btn-primary mb-3" id="btnCalculaSuma">Calcular si alguno es la suma de los otros 2</button>
         </div>
         <div id="alerta" class="alert alert-success" role="alert"></div>
         <hr>
-        <h4></h4>
+    </form>
+    <h4>Ingresa un numero entero y determinaré si es multiplo de 3</h4>
+    <form class="row g-3">
+        <div class="col-auto">
+            <label for="name1" class="visually-hidden">Número</label>
+            <input type="text" autocomplete="off" class="form-control" id="multiplo" placeholder="Ingresa un numero">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary mb-3" id="btnMultiplo">Revisar Multiplo</button>
+        </div>
+        <div id="alerta2" class="alert alert-success" role="alert"></div>
+        <hr>
+    </form>
+    <h4>Ingresa un numero y revisaré si es par o impar</h4>
+    <form class="row g-3">
+        <div class="col-auto">
+            <label for="name1" class="visually-hidden">Número</label>
+            <input type="text" autocomplete="off" class="form-control" id="parImpar" placeholder="Ingresa un numero">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary mb-3" id="btnParidad">Revisar si es par o impar</button>
+        </div>
+        <div id="alerta3" class="alert alert-success" role="alert"></div>
+        <hr>
     </form>
 
     <script src="js/main.js"></script>
