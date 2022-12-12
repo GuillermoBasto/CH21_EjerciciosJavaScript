@@ -42,6 +42,30 @@ btnCalculaMenor.addEventListener("click", function (event){
     resultado.innerHTML += "<br> El numero menor es: " + encuentraMenor(arreglo1);
 });
 
+///////////// Funcion para el ejercicio 3 //////////////////
+let vidas = 10;
+let btnAdivina = document.getElementById("btnAdivina");
+let adivinanza = document.getElementById("adivinanza");
+let resultado = document.getElementById("alerta4");
+let numeroMaquina = Math.floor((Math.random()*100)+1);
+
+btnAdivina.addEventListener("click", adivinar);
+
+function adivinar(numUsuario){
+    numUsuario=parseInt(adivinanza.value);
+    if(vidas==0){
+        alert ("se acabaron tus vidas, refresca para reiniciar");
+    }else if(numUsuario==numeroMaquina){
+        alert ("Adivinaste, refresca para reiniciar");
+    }else if(numUsuario>numeroMaquina){
+        vidas--;
+        resultado.innerHTML+= "<br>El numero es menor";
+    }else if(numUsuario<numeroMaquina){
+        vidas--;
+        resultado.innerHTML+= "<br>El numero es mayor";
+    }
+}
+
 ///////////// Funcion para el ejercicio 4 //////////////////
 function multiplo3(numero) {
     if (numero%3 ==0){

@@ -11,7 +11,7 @@
 <body>
     <h1>Implementación de los ejercicios de la parte 2</h1>
     <br>
-    <h4>Ingresa 3 números y presiona uno de los botones</h4>
+    <h4>Ingresa 3 números entre el 1 y el 100 y presiona uno de los botones</h4>
     <form class="row g-3">
         <div class="col-auto">
             <label for="name1" class="visually-hidden">Número 1</label>
@@ -33,7 +33,19 @@
         <div id="alerta" class="alert alert-success" role="alert"></div>
         <hr>
     </form>
-    <h4>Ingresa un numero entero y determinaré si es multiplo de 3</h4>
+    <h4>Ingresa un número entre el 1 y el 100 e intenta adivinar el numero que pensé en menos de 10 intentos</h4>
+    <form class="row g-3">
+        <div class="col-auto">
+            <label for="name1" class="visually-hidden">intento de adivinar</label>
+            <input type="text" autocomplete="off" class="form-control" id="adivinanza" placeholder="Ingresa tu numero">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary mb-3" id="btnAdivina">Intentar adivinar</button>
+        </div>
+        <div id="alerta4" class="alert alert-success" role="alert"></div>
+        <hr>
+    </form>
+    <h4>Ingresa un numero entero entre 100 y 200 y determinaré si es multiplo de 3</h4>
     <form class="row g-3">
         <div class="col-auto">
             <label for="name1" class="visually-hidden">Número</label>
